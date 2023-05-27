@@ -5,3 +5,10 @@
   text-anchor: middle;
   alignment-baseline: middle;
 }
+
+.timer {
+  position: absolute;
+  font-size: x-large;
+  top: 10px;
+  right: 10px;
+}
