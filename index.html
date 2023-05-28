@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>SIOUX FALLS</title>
+    <title>DTA MULTI-CLASS</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/d3-3.x.x-compat/d3-3.5.17.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
@@ -25,9 +25,24 @@
 </head>
 <body>
   <div class="center">
+    <div class="dropdown">
+      <button class="dropbtn">Note</button>
+      <div class="dropdown-content">
+      <p> 
+        In density(k) and flow(q) simulation, the thickness changes with value. In the speed(u) simulation, along the thickness, the colour of the part of link changes as well as according to the following colour scale
+        <div class="color-scale"></div>
+        where red denotes the minimum speed and yellow denotes max speed.
+
+      </p>
+      </div>
+    </div>
+
+
+
+
     <label for="option1">density(k)</label>
     <input type="radio" id="option1" name="option" value="option1" onclick="updateSim('density')">
-    <label for="option2">number of vehicles(q)</label>
+    <label for="option2">flow(q)</label>
     <input type="radio" id="option2" name="option" value="option2" onclick="updateSim('vehicles')">
     <label for="option3">speed(u)</label>
     <input type="radio" id="option3" name="option" value="option3" onclick="updateSim('speed')">
